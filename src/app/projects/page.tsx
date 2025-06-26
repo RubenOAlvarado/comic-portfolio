@@ -1,15 +1,6 @@
 import ProjectCard from "@/components/ProjectCard";
 import SectionLayout from "@/components/SectionLayout";
-
-const projects = [
-    {
-      title: 'Game Database',
-      description: 'Buscador de videojuegos animado.',
-      demoUrl: 'https://game-database-iota.vercel.app/',
-      codeUrl: 'https://github.com/RubenOAlvarado/game-database',
-      techs: ['React', 'TypeScript', 'Vite', 'Tailwind', 'Framer Motion', 'Nest', 'PostgreSQL'],
-    },
-  ];
+import { projects } from "@/data/projects";
 
 export default function ProjectsPage() {
     return (

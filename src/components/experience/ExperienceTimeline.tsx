@@ -92,11 +92,17 @@ import Technologies from '../Technologies';
                     </div>
   
                     {/* Tecnologías */}
-                    <Technologies 
-                        techs={exp.techs} 
-                        index={index}
-                        isTimeline={true} 
-                    />
+                    {exp.techs && exp.techs.length > 0 && (
+                      <motion.div 
+                        className="mb-6"
+                        initial={{ opacity: 0, y: 10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: 0.3 }}
+                      >
+                        <Technologies techs={exp.techs} isTimeline={true} index={index} />
+                      </motion.div>
+                    )}
   
                     {/* Flecha decorativa */}
                     <div className={`hidden md:block absolute top-8 ${

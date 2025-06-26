@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+
+.home-title {
+  text-shadow: 2px 2px 0 #000, 4px 4px 0 #facc15;
+}
+
+/* Estilo de cómic */
+.comic-title {
+  font-family: 'Bangers', 'Comic Neue', cursive;
+  color: #1e293b;
+  /* Un azul oscuro más suave */
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.comic-title::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #f59e0b, #ef4444);
+  transform: skewX(-15deg);
+}
+
+/* Alternativa más sutil para el efecto cómic */
+.comic-title-alt {
+  font-family: 'Bangers', cursive;
+  color: #1e293b;
+  text-shadow:
+    2px 2px 0px rgba(0, 0, 0, 0.1),
+    3px 3px 0px rgba(251, 191, 36, 0.3);
+  letter-spacing: 1.5px;
+}
+
+/* Fondo más profesional para las tarjetas */
+.comic-panel {
+  border: 3px solid #1e293b;
+  box-shadow: 6px 6px 0 rgba(30, 41, 59, 0.2);
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.comic-panel:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0 rgba(30, 41, 59, 0.3);
+}
+
+.comic-text {
+  font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+}
+
+.comic-button {
+  border: 2px solid #000;
+  box-shadow: 4px 4px 0 #000;
+  transition: transform 0.1s ease-in-out;
+}
+
+.comic-button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 #000;
+}

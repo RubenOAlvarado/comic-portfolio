@@ -1,10 +1,12 @@
 import AnimatedSection from '@/components/homePage/AnimatedSection';
 import SocialMedia from '@/components/homePage/SocialMedia';
+import { Metadata } from 'next';
 import { AbstractIntlMessages, useTranslations } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getLocale, getMessages } from 'next-intl/server';
 import Link from 'next/link';
 
-export async function generateMetadata({params: { locale } }: { params: { locale: string } }) {
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
   const messages: AbstractIntlMessages = await getMessages({ locale });
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const metadata = typeof messages.Metadata === 'object' && messages.Metadata !== null ? messages.Metadata as Record<string, any> : {};

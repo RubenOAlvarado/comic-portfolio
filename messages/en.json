@@ -1,0 +1,42 @@
+{
+    "Navigation": {
+        "home": "Home",
+        "projects": "Projects",
+        "experience": "Experience",
+        "about-me": "About Me",
+        "blog": "Blog",
+        "contact": "Contact"
+    },
+    "Metadata": {
+        "home": {
+            "title": "Ruben O. Alvarado | Senior Software Engineer & Comic Enthusiast",
+            "description": "Personal portfolio of Ruben O. Alvarado: fullstack developer, storyteller, and comic book lover."
+        }
+    },
+    "HomePage": {
+        "title": "Hi, I'm Ruben O. Alvarado ✨",
+        "description": "Senior software engineer, storyteller, and comic book fan. This site is a window into my work, my ideas, and my passion for storytelling.",
+        "cta": "Hire Me!"
+    },
+    "Manifest":{
+        "name": "Ruben O. Alvarado's Portfolio",
+        "short_name": "Ruben's Portfolio",
+        "description": "Personal portfolio of Ruben O. Alvarado: Senior software engineer, storyteller, and comic book lover.",
+        "start_url": "/",
+        "display": "standalone",
+        "theme_color": "#FBBF24",
+        "background_color": "#FBBF24",
+        "icons": [
+            {
+                "src": "/icon-192x192.png",
+                "sizes": "192x192",
+                "type": "image/png"
+            },
+            {
+                "src": "/icon-512x512.png",
+                "sizes": "512x512",
+                "type": "image/png"
+            }
+        ]
+    }
+}

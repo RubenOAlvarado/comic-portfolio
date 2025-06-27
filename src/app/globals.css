@@ -66,3 +66,85 @@
   transform: translate(-2px, -2px);
   box-shadow: 6px 6px 0 #000;
 }
+
+.social-comic-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.social-comic-button::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.social-comic-button:hover::before {
+  animation: shine 0.8s ease-in-out;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+/* Efecto de vibración al hover para los iconos sociales */
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-2px);
+  }
+
+  75% {
+    transform: translateX(2px);
+  }
+}
+
+.social-comic-button:hover {
+  animation: shake 0.5s ease-in-out;
+}
+
+/* Efecto de parpadeo para el texto de "POW!" */
+@keyframes blink {
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.group:hover .animate-blink {
+  animation: blink 0.6s infinite;
+}
+
+/* Sombras más dramáticas para el efecto cómic */
+.comic-shadow {
+  filter: drop-shadow(4px 4px 0px #000) drop-shadow(-1px -1px 0px #000) drop-shadow(1px -1px 0px #000) drop-shadow(-1px 1px 0px #000);
+}

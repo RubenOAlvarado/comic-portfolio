@@ -1,21 +1,26 @@
 import './globals.css';
-import { ReactNode } from 'react';
 import { Inter } from 'next/font/google';
 import Navbar from '@/components/Navbar';
+import { NextIntlClientProvider } from 'next-intl';
+import { getLocale, getMessages } from 'next-intl/server';
+import clsx from 'clsx';
+import { ReactNode } from 'react';
+
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata = {
-  title: 'Rubén Alvarado | Software Developer & Comic Enthusiast',
-  description: 'Portafolio personal de Rubén Alvarado: desarrollador fullstack, escritor creativo y amante de los cómics.',
-};
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default async function LocaleLayout({ children }: Readonly<{ children: ReactNode }>) {
+  const messages = await getMessages();
+  const locale = await getLocale();
+
   return (
-    <html lang="es">
-      <body className={`${inter.className} bg-neutral-900 text-white`}>
-        <Navbar />
-        {children}
+    <html lang={locale}>
+      <body className={clsx(inter.className, `bg-neutral-900 text-white`)}>
+        <NextIntlClientProvider messages={messages}>
+          <Navbar />
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

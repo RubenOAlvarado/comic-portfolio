@@ -1,0 +1,42 @@
+{
+    "Navigation":{
+        "home": "Inicio",
+        "projects": "Proyectos",
+        "experience": "Experiencia",
+        "about-me": "Sobre mí",
+        "blog": "Blog",
+        "contact": "Contacto"
+    },
+    "Metadata": {
+        "home": {
+            "title": "Rubén O. Alvarado | Desarrollador de Software y Entusiasta del Cómic",
+            "description": "Portafolio personal de Rubén O. Alvarado: desarrollador fullstack, escritor creativo y amante de los cómics."
+        }
+    },
+    "HomePage": {
+        "title": "¡Hola! Soy Rubén O. Alvarado ✨",
+        "description": "Desarrollador de software, escritor y fanático de los cómics. Este sitio es una ventana a mi trabajo, mis ideas y mi pasión por contar historias.",
+        "cta": "¡Contrátame!"
+    },
+    "Manifest": {
+        "name": "Portafolio de Rubén O. Alvarado",
+        "short_name": "Portafolio de Rubén",
+        "description": "Portafolio personal de Rubén Alvarado: desarrollador de software, escritor y amante de los cómics.",
+        "start_url": "/",
+        "display": "standalone",
+        "theme_color": "#FBBF24",
+        "background_color": "#FBBF24",
+        "icons": [
+            {
+                "src": "/icon-192x192.png",
+                "sizes": "192x192",
+                "type": "image/png"
+            },
+            {
+                "src": "/icon-512x512.png",
+                "sizes": "512x512",
+                "type": "image/png"
+            }
+        ]
+    }
+}

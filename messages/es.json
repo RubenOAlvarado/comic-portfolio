@@ -39,5 +39,18 @@
                 "type": "image/png"
             }
         ]
+    },
+    "ContactPage": {
+        "title": "¡Dime hola! 👋",
+        "subtitle": "¡Conectemos! Ya sea que tengas un proyecto en mente, quieras colaborar o simplemente charlar sobre cómics, estoy aquí para escucharte.",
+        "form": {
+            "name": "Tu Nombre",
+            "email": "Tu Correo Electrónico",
+            "message": "Tu Mensaje",
+            "submit": "Enviar POW! ✉️",
+            "success": "¡POW! Formulario enviado con éxito!",
+            "error": "¡POW! Algo salió mal, por favor intenta de nuevo."
+        },
+        "reachme": "o contáctame directamente en:"
     }
 }

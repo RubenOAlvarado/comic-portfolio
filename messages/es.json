@@ -16,7 +16,8 @@
     "HomePage": {
         "title": "¡Hola! Soy Rubén O. Alvarado ✨",
         "description": "Desarrollador de software, escritor y fanático de los cómics. Este sitio es una ventana a mi trabajo, mis ideas y mi pasión por contar historias.",
-        "cta": "¡Contrátame!"
+        "cta": "¡Contrátame!",
+        "social": "Sígueme en "
     },
     "Manifest": {
         "name": "Portafolio de Rubén O. Alvarado",

@@ -10,10 +10,6 @@ declare const messages: {
         "blog": "Blog",
         "contact": "Contact"
     },
-    "LocaleSwitcher": {
-        "label": "Change Language",
-        "locale": "{locale, select, es {es Spanish} en {🇺🇸 English}}"
-    },
     "Metadata": {
         "title": "Rubén Alvarado | Software Developer & Comic Enthusiast",
         "description": "Personal portfolio of Rubén Alvarado: fullstack developer, creative writer, and comic book lover."
@@ -21,7 +17,8 @@ declare const messages: {
     "HomePage": {
         "title": "Hi, I'm Rubén ✨",
         "description": "Fullstack developer, creative storyteller, and comic book fan. This site is a window into my work, my ideas, and my passion for storytelling.",
-        "projects": "View Projects"
+        "cta": "Hire Me!",
+        "social": "Connect with me on "
     },
     "Manifest":{
         "name": "Rubén Alvarado's Portfolio",

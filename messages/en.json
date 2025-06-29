@@ -16,7 +16,8 @@
     "HomePage": {
         "title": "Hi, I'm Ruben O. Alvarado ✨",
         "description": "Senior software engineer, storyteller, and comic book fan. This site is a window into my work, my ideas, and my passion for storytelling.",
-        "cta": "Hire Me!"
+        "cta": "Hire Me!",
+        "social": "Connect with me on "
     },
     "Manifest":{
         "name": "Ruben O. Alvarado's Portfolio",

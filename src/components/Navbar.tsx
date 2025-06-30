@@ -39,8 +39,40 @@ export default function Navbar() {
   
   return (
     <nav className="bg-yellow-300 text-black px-6 py-4 border-b-4 border-black shadow-md sticky top-0 z-50">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between relative">
-        <div className="absolute top-4 right-4 md:relative md:top-auto md:right-auto flex gap-2 mb-4 md:mb-0 md:order-2">
+      <div className="flex flex-wrap items-center justify-between">
+        <ul className="flex flex-wrap justify-center gap-4 font-bold text-sm md:text-base flex-1">
+          <motion.li key="/" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <NavigationLink href="/">
+              {t('home')}
+            </NavigationLink>
+          </motion.li>
+          <motion.li key="/projects" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <NavigationLink href="/projects">
+              {t('projects')}
+            </NavigationLink>
+          </motion.li>
+          <motion.li key="/experience" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <NavigationLink href="/experience">
+              {t('experience')}
+            </NavigationLink>
+          </motion.li>
+          <motion.li key="/about-me" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <NavigationLink href="/about-me">
+              {t('about-me')}
+            </NavigationLink>
+          </motion.li>
+          <motion.li key="/blog" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <NavigationLink href="/blog">
+              {t('blog')}
+            </NavigationLink>
+          </motion.li>
+          <motion.li key="/contact" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <NavigationLink href="/contact">
+              {t('contact')}
+            </NavigationLink>
+          </motion.li>
+        </ul>
+        <div className="absolute right-4 top-1/2 -translate-y-1/2 flex gap-1">
           {languages.map((lang) => (
             <motion.button
               key={lang.code}
@@ -77,38 +109,6 @@ export default function Navbar() {
             </motion.button>
           ))}
         </div>
-        <ul className="flex flex-wrap justify-center gap-4 font-bold text-sm md:text-base md:order-1 mt-12 md:mt-0">
-          <motion.li key="/" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <NavigationLink href="/">
-              {t('home')}
-            </NavigationLink>
-          </motion.li>
-          <motion.li key="/projects" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <NavigationLink href="/projects">
-              {t('projects')}
-            </NavigationLink>
-          </motion.li>
-          <motion.li key="/experience" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <NavigationLink href="/experience">
-              {t('experience')}
-            </NavigationLink>
-          </motion.li>
-          <motion.li key="/about-me" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <NavigationLink href="/about-me">
-              {t('about-me')}
-            </NavigationLink>
-          </motion.li>
-          <motion.li key="/blog" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <NavigationLink href="/blog">
-              {t('blog')}
-            </NavigationLink>
-          </motion.li>
-          <motion.li key="/contact" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <NavigationLink href="/contact">
-              {t('contact')}
-            </NavigationLink>
-          </motion.li>
-        </ul>
       </div>
     </nav>
   );

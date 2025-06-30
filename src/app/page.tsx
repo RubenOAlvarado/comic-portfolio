@@ -46,12 +46,13 @@ export default function HomePage() {
 
         <SocialMedia />
 
-        <button 
+        <Link 
+          href="/contact"
           className="inline-block bg-yellow-400 text-black font-bold px-6 py-3 rounded shadow-lg hover:bg-yellow-300 transition comic-button"
           aria-label={t('cta')}
         >
-          <Link href="/contact">{t('cta')}</Link>
-        </button>
+          {t('cta')}
+        </Link>
       </AnimatedSection>
     </main>
   );

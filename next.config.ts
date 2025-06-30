@@ -3,6 +3,10 @@ import { NextConfig } from 'next';
 const createNextIntlPlugin = require('next-intl/plugin');
 const withNextIntl = createNextIntlPlugin({});
 
-const config: NextConfig = {};
+const config: NextConfig = {
+    images: {
+        domains: ['media2.dev.to', 'cdn-images-1.medium.com'],
+    },
+};
 
 export default withNextIntl(config);

@@ -5,7 +5,9 @@
         "experience": "Experiencia",
         "about-me": "Sobre mí",
         "blog": "Blog",
-        "contact": "Contacto"
+        "contact": "Contacto",
+        "mobile-brand": "Desarrollador de Software Senior",
+        "language-alt": "Cambiar Idioma"
     },
     "Metadata": {
         "home": {
@@ -16,7 +18,8 @@
     "HomePage": {
         "title": "¡Hola! Soy Rubén O. Alvarado ✨",
         "description": "Desarrollador de software, escritor y fanático de los cómics. Este sitio es una ventana a mi trabajo, mis ideas y mi pasión por contar historias.",
-        "cta": "¡Contrátame!"
+        "cta": "¡Contrátame!",
+        "social": "Sígueme en "
     },
     "Manifest": {
         "name": "Portafolio de Rubén O. Alvarado",
@@ -38,5 +41,22 @@
                 "type": "image/png"
             }
         ]
+    },
+    "ContactPage": {
+        "title": "¡Dime hola! 👋",
+        "subtitle": "¡Conectemos! Ya sea que tengas un proyecto en mente, quieras colaborar o simplemente charlar sobre cómics, estoy aquí para escucharte.",
+        "form": {
+            "name": "Tu Nombre",
+            "email": "Tu Correo Electrónico",
+            "message": "Tu Mensaje",
+            "submit": "Enviar POW! ✉️",
+            "success": "¡POW! Formulario enviado con éxito!",
+            "error": "¡POW! Algo salió mal, por favor intenta de nuevo."
+        },
+        "reachme": "o contáctame directamente en:"
+    },
+    "BlogPage": {
+        "title": "Blog y Artículos",
+        "description": "Reflexiones, tutoriales e historias de mi viaje como desarrollador de software y entusiasta del cómic."
     }
 }

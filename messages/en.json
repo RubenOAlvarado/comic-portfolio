@@ -5,7 +5,9 @@
         "experience": "Experience",
         "about-me": "About Me",
         "blog": "Blog",
-        "contact": "Contact"
+        "contact": "Contact",
+        "mobile-brand": "Senior Software Engineer",
+        "language-alt": "Change Language"
     },
     "Metadata": {
         "home": {
@@ -16,7 +18,8 @@
     "HomePage": {
         "title": "Hi, I'm Ruben O. Alvarado ✨",
         "description": "Senior software engineer, storyteller, and comic book fan. This site is a window into my work, my ideas, and my passion for storytelling.",
-        "cta": "Hire Me!"
+        "cta": "Hire Me!",
+        "social": "Connect with me on "
     },
     "Manifest":{
         "name": "Ruben O. Alvarado's Portfolio",
@@ -38,5 +41,22 @@
                 "type": "image/png"
             }
         ]
+    },
+    "ContactPage":{
+        "title": "Say hello! 👋",
+        "subtitle": "Let's connect! Whether you have a project in mind, want to collaborate, or just want to chat about comics, I'm all ears.",
+        "form": {
+            "name": "Your Name",
+            "email": "Your Email",
+            "message": "Your Message",
+            "submit": "Send POW! ✉️",
+            "success": "POW! Form submitted successfully!",
+            "error": "POW! Something went wrong, please try again."
+        },
+        "reachme":"or reach me directly at:"
+    },
+    "BlogPage": {
+        "title": "Blog & Articles",
+        "description": "Thoughts, tutorials, and stories from my journey as a software engineer and comic book enthusiast."
     }
 }

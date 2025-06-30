@@ -5,7 +5,9 @@
         "experience": "Experiencia",
         "about-me": "Sobre mí",
         "blog": "Blog",
-        "contact": "Contacto"
+        "contact": "Contacto",
+        "mobile-brand": "Desarrollador de Software Senior",
+        "language-alt": "Cambiar Idioma"
     },
     "Metadata": {
         "home": {
@@ -52,5 +54,9 @@
             "error": "¡POW! Algo salió mal, por favor intenta de nuevo."
         },
         "reachme": "o contáctame directamente en:"
+    },
+    "BlogPage": {
+        "title": "Blog y Artículos",
+        "description": "Reflexiones, tutoriales e historias de mi viaje como desarrollador de software y entusiasta del cómic."
     }
 }

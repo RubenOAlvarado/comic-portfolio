@@ -5,7 +5,9 @@
         "experience": "Experience",
         "about-me": "About Me",
         "blog": "Blog",
-        "contact": "Contact"
+        "contact": "Contact",
+        "mobile-brand": "Senior Software Engineer",
+        "language-alt": "Change Language"
     },
     "Metadata": {
         "home": {
@@ -52,5 +54,9 @@
             "error": "POW! Something went wrong, please try again."
         },
         "reachme":"or reach me directly at:"
+    },
+    "BlogPage": {
+        "title": "Blog & Articles",
+        "description": "Thoughts, tutorials, and stories from my journey as a software engineer and comic book enthusiast."
     }
 }
